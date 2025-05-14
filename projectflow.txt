@@ -1,3 +1,23 @@
-Step 1 : Create a github repo for this project , clone it in local.
-Step 2 : Create a py file to save a sample csv with some information in it.
-Step 3 : 
+1 : Create a github repo for this project , clone it in local.
+
+2 : Create a py file to save a sample csv with some information in it.
+
+3 : Install dvc, Initialize dvc 
+    - pip install dvc
+    - dvc init
+
+4 : Create temp folder to saver versioning of data.
+    - mkdir s3
+
+5 : Add saving remote dir to dvc.
+    - dev remote add -d myremote S3
+    - for now we have created a folder but this will be a actual s3 path
+
+6 : dvc add data/
+    - throws error do - git rm -r --cached data
+    - commit change - git commit -m "stop tracking data"
+    - basically we are telling git to stop tracking data and let dvc do the sample
+      again do dvc add data/
+    - this creates a new file data.dvc and changes .gitignore file so we git add then
+      and git to track them - git add .gitignore data.dvc
+
