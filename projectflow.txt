@@ -26,3 +26,6 @@
 
 8 : Again when the data is changed repeat step 7, sometime you may need to use
     git commit --force. 
+
+9 : Rollback , use git log --online to get sha id and git checkout <shaid> and  
+    then do dvc pull.
