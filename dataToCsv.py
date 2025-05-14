@@ -9,8 +9,13 @@ def main():
 
     df = pd.DataFrame(clubData)
 
+    new_row_loc = {"Name": "Liverpool", "Country": "England", "UCL": 5}
+    df.loc[len(df)] = new_row_loc
+
     dataDir = Path("data")
-    dataDir.makedir(exist_ok=True)
+    # dataDir.makedirs(exist_ok=True)
+    os.makedirs(dataDir,exist_ok=True)
+
     filePath = dataDir/"samplefile.csv"
 
     df.to_csv(filePath ,index=False)

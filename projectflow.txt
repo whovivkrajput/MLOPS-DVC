@@ -21,3 +21,8 @@
     - this creates a new file data.dvc and changes .gitignore file so we git add then
       and git to track them - git add .gitignore data.dvc
 
+7 : dvc commit and dvc push - this saves version and data into s3
+    and now can commit the changes into github
+
+8 : again when the data is changed repeat step 7, sometime you may need to use
+    git commit --force.
