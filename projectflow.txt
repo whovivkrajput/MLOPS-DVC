@@ -24,5 +24,5 @@
 7 : dvc commit and dvc push - this saves version and data into s3
     and now can commit the changes into github
 
-8 : again when the data is changed repeat step 7, sometime you may need to use
-    git commit --force.
+8 : Again when the data is changed repeat step 7, sometime you may need to use
+    git commit --force. 

@@ -11,7 +11,10 @@ def main():
 
     new_row_loc = {"Name": "Liverpool", "Country": "England", "UCL": 5}
     df.loc[len(df)] = new_row_loc
-
+    
+    new_row_loc_3 = {"Name": "Ajax", "Country": "Dutch", "UCL": 2}
+    df.loc[len(df)] = new_row_loc_3
+    
     dataDir = Path("data")
     # dataDir.makedirs(exist_ok=True)
     os.makedirs(dataDir,exist_ok=True)
